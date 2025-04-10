@@ -1,40 +1,33 @@
-Overview
-SCAISTAR is an AI-powered football assistant built with Streamlit that provides real-time match data, player statistics, news, and intelligent analysis using OpenAI's GPT-4o.
-Features
+## ⚽ SCAISTAR - AI Football Assistant
 
-💬 AI Chat Assistant - Ask any football question and get intelligent answers
-🔴 Live Matches - Real-time scores and match details
-🎮 Player Database - Search and compare player statistics
-📰 News - Latest football news from around the world
-📈 Analytics - League tables, team analysis, and predictions
+SCAISTAR is an AI-powered football assistant built with Streamlit. It delivers real-time match data, player stats, global news, and smart insights using GPT-4o.
 
-Quick Start
+### 🔑 Features  
+- 💬 **AI Chat** – Ask any football-related question  
+- 🔴 **Live Matches** – Real-time scores & match info  
+- 🎮 **Player Stats** – Search & compare players  
+- 📰 **News** – Latest football headlines  
+- 📈 **Analytics** – League tables & predictions  
 
-Clone the repository
-Install dependencies:
-pip install -r requirements.txt
+### 🚀 Quick Start  
+1. Clone the repo  
+2. Install dependencies:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
+3. Add your OpenAI API key in `initialize_clients()`  
+4. Run the app:  
+   ```bash  
+   streamlit run app.py  
+   ```
 
-Add your OpenAI API key in the initialize_clients() function
-Run the application:
-streamlit run app.py
+### 🔐 API Keys  
+Only OpenAI key is required. Add it in `initialize_clients()`:
+```python
+openai_api_key = "your-openai-api-key"  
+os.environ["OPENAI_API_KEY"] = openai_api_key
+```
 
+### 📦 Dependencies  
+`streamlit`, `requests`, `pandas`, `plotly`, `openai`, `scikit-learn`, `pillow`, `numpy`
 
-API Keys
-This app requires an OpenAI API key. Other APIs (RapidAPI, News API) are pre-configured.
-To add your OpenAI API key:
-pythondef initialize_clients():
-    openai_api_key = "your-openai-api-key"  # <-- Replace with your key
-    os.environ["OPENAI_API_KEY"] = openai_api_key
-    client = OpenAI(api_key=openai_api_key)
-
-    
-Dependencies
-
-streamlit
-requests
-pandas
-plotly
-openai
-scikit-learn
-pillow
-numpy

@@ -50,30 +50,18 @@ RapidAPI for player information
 Installation
 Prerequisites
 
-Python 3.8+
-pip (Python package installer)
-
-Setup
-
-Clone the repository:
-bashgit clone https://github.com/yourusername/scaistar.git
-cd scaistar
 
 Create a virtual environment:
-bashpython -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 
 Install dependencies:
-bashpip install -r requirements.txt
+
 
 API Keys Setup:
 
-OpenAI API key: Replace the empty string in the initialize_clients() function
-Other API keys are pre-configured in the code
-
 
 Run the application:
-bashstreamlit run app.py
+
 
 
 Project Structure

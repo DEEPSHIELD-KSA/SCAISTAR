@@ -1,4 +1,4 @@
-#SCAISTAR - AI-Powered Football Assistant
+SCAISTAR - AI-Powered Football Assistant
 Show Image
 Overview
 SCAISTAR is a comprehensive, AI-powered football assistant built with Streamlit. It provides real-time match data, player statistics, news updates, and intelligent analysis through an intuitive user interface. The application leverages OpenAI's GPT-4o model to answer user questions and provide insights about football/soccer.
